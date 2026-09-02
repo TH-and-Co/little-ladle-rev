@@ -1,4 +1,5 @@
 {
+  "buildCommand": "vite build && cp index.html dist/client/index.html",
   "outputDirectory": "dist/client",
   "cleanUrls": true,
   "rewrites": [
