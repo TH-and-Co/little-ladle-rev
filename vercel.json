@@ -1,5 +1,5 @@
 {
-  "buildCommand": "vite build && node -e \"const fs=require('fs'),path=require('path');const dir='dist/client/assets';const files=fs.readdirSync(dir);const js=files.find(f=>f.startsWith('index-')&&f.endsWith('.js'));const css=files.find(f=>f.startsWith('styles-')&&f.endsWith('.css'));const html=\`<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'/><meta name='viewport' content='width=device-width,initial-scale=1.0'/><title>Little Ladle Hotpot</title><link rel='stylesheet' href='/assets/\${css}'></head><body><div id='root'></div><script type='module' src='/assets/\${js}'></script></body></html>\`;fs.writeFileSync('dist/client/index.html',html);\"",
+  "buildCommand": "vite build && node generate-html.js",
   "outputDirectory": "dist/client",
   "cleanUrls": true,
   "rewrites": [
