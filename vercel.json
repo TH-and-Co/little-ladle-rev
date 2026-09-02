@@ -1,6 +1,6 @@
 {
-  "buildCommand": "vite build && node generate-html.js",
-  "outputDirectory": "dist/client",
+  "buildCommand": "vite build",
+  "outputDirectory": "dist",
   "cleanUrls": true,
   "rewrites": [
     {
