@@ -1,0 +1,10 @@
+node_modules
+dist
+.output
+.tanstack
+.vercel
+.env
+.env.local
+*.local
+.DS_Store
+Thumbs.db
